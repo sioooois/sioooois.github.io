@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>  
+    <style>
+
+
+ .clear{
+    clear:both;
+}
+#logo{
+    margin: 50px;
+}
+
+.menu{
+    width:100px;
+    margin: 50px 45px 15px 45px;
+    padding: 10px;
+    display: inline-block;
+    color: #222;
+    /*font-weight: bold;*/
+    font-size: 20px;
+}
+
+.down{
+    position: relative;
+    display: inline-block;
+}
+
+.down_content{
+    width:3000px;
+    height:160px;   
+    display: none;
+    z-index: 10;
+    background-color: #ffffff;   
+    position: absolute;
+    left: -1070px;
+}
+
+.down_content a{
+    display: block;
+    color: #888;
+    padding: 15px;
+    text-decoration: none;
+}
+.down_content th{
+    width: 210px;
+}
+
+.down:hover .down_content {
+    display: block;
+}
+
+
+#login{
+    display: inline-block;
+    margin:35px;
+}
+#login li{
+    padding-left:40px;
+    list-style-type: none;
+    display: inline;
+}
+#list li{
+    display: inline-block;
+
+}
+#list ul{
+    white-space: nowrap;
+    margin top: 20px 
+}
+
+*{margin:0;padding:0;}
+    ul,li{list-style:none;}
+    .slide{ height:775px;overflow:hidden;}
+    .slide ul{position:relative;height:100%;}
+    .slide li{position:absolute;left:0;right:0;top:0;bottom:0;opacity:0;animation:fade 8s infinite;}
+    .slide li:nth-child(1){background-image:url(stone.jpg);animation-delay:0s}
+    .slide li:nth-child(2){background-image:url(inthe.jpg);animation-delay:2s}
+    .slide li:nth-child(3){background-image:url(luka.jpg);animation-delay:4s}
+    .slide li:nth-child(4){background-image:url(cash.jpg);animation-delay:6s}
+    @keyframes fade {
+      0% {opacity:0;}
+      5% {opacity:1;}
+      25% {opacity:1;}
+      30% {opacity:0;}
+      100% {opacity:0;}
+    }
+</style>
+</head>
+<body>
+    <center>
+        <header>
+            
+            <img src='cinema.png'>
+            <!--다운-->
+            <nav class="down">
+                
+                <div class="menu">영화</div>
+                <div class="menu">예매</div>
+                <div class="menu">극장</div>
+                <div class="menu">이벤트</div>
+                <div class="down_content">
+                    <table border=0>
+                    <top>
+                        <tr>
+                            <th><a href=''>무비차트</a></th>
+                            <th><a href='menu.html' target="section">빠른 예매</a></th>
+                            <th><a href='use1.html' target=section>기정시네마 극장</a></th>
+                            <th><a href='event.html' target="section">이벤트</a></th>
+                        </tr>
+
+                        <tr>
+                            <th><a href='auto.html' target="section">기정's 무비 픽</a></th>
+                            <th><a href=''>상영시간표</a></th>
+                            <th><a href=''>특별관</a></th>                       
+                        </tr>
+                        <tr>
+                            <th><a href=''>광고영상</a></th>
+                        </tr>
+                        
+                        
+                    </top>
+                    </table>
+                </div>
+            </nav>
+
+            <ul id=login>
+                <li><a href=''>로그인</a></li>
+                <li><a href=''>회원가입</a></li>
+            </ul>   
+        </header>
+ <!--슬라이드-->
+ <div class="slide">
+    <ul>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
+   
+          
+        <!--영화 리스트 -->    
+        <br>
+        <img src="movie_selection.gif">
+        <br>
+        <ul id=list>
+            <li id=list>            
+            <img src="cash1.png" >
+            </li>
+
+            <li id=list>   
+            <img src="stone1.png" >
+            </li>
+
+            <li id=list>   
+            <img src="angry1.png" >
+            </li>
+
+            <li id=list>   
+            <img src="flash.png" >
+            </li>
+
+            <li id=list>   
+            <img src="quiet.png" >
+            </li>
+        </ul>
+    </center>
+
+
+</body>
+</html>
