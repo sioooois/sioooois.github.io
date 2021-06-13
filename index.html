@@ -16,6 +16,12 @@ h1{
     color:white;
     font-size: 15px;
 }
+h3{
+    float: left;
+  margin-left: 200px;
+  text-align: left;
+  font-size: 80px;
+}
 
  .clear{
     clear:both;
@@ -127,6 +133,34 @@ footer{
       30% {opacity:0;}
       100% {opacity:0;}
     }
+    .text{
+        width: 350px;
+        height: 0px;
+        background-size: 350px 220px;
+        background-repeat: no-repeat;
+        background-position: 0px 20px;
+        text-align: center; 
+        position: relative;
+        transition: height 2s; background-color: 2s;
+        display: inline-block;
+    }
+    .text:hover
+    {        
+        height: 277px; 
+        background-color: red;
+        color: white;
+        transition: 1s;
+    }
+    .text_title{
+        padding: 0px 0 20px 0;
+        font-size: 30px;
+        /*color: #cf7b20;*/
+    }
+    .text_sub{
+        padding: 0px 0 20px 0;
+        font-size: 15px;
+        /*color: #737373;*/
+    }
 .btn { display:block; width:200px; height:40px; line-height:40px; margin:15px auto; background-color:#990000; text-align:center; cursor: pointer; color:#fff; transition:all 0.9s, color 0.3; } 
 .btn:hover{color:#fff;}
 .hover1:hover{ box-shadow:200px 0 0 0 rgba(0,0,0,0.5) inset; }
@@ -191,12 +225,12 @@ footer{
 
 
         <!--영화 리스트 -->    
-        <br>
+        <br><br><br>
         <img src="Cul.png">
-        <br>
+        <br><br><br>
         <ul id=list>
             <li id=list>            
-            <img src="cash1.png">            
+            <img src="cash1.png" >                 
             <h2>캐시트럭</h2>
             <h1>예매율 20.9% 평점 8.0</h1>
             <h1>2021.06.09 개봉</h1>
@@ -235,6 +269,8 @@ footer{
             <button class="btn hover1" onclick="location.href='gimpo.html' "> 예매하기 </button> 
             </li>
         </ul>
+       <hr width = "80%" color = "white" style=" margin-top: 200px; margin-bottom: 100px; display: none;">  <br> <br> <br><h3 style="color: white">EVENT</h3> <br><br><br><br><br><br>
+       <hr width = "80%" color = "white" style=" margin-bottom: 150px;">
          <ul id=list2 >    
             <li id=list2 >        
             <img src="event_cru.jpg" style="margin-left: 320px;">
